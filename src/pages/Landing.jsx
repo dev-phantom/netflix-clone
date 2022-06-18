@@ -51,7 +51,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles["section-two"]} data-aos="fade-right">
+            <div className={styles["section-two"]}  data-aos="zoom-in" data-aos-duration="2000">
                 <div className={styles["enjoy-text"]}>
                     <div className={styles["header"]}>Enjoy on your TV.</div>
                     <p className={styles["header-primary"]}>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
@@ -60,7 +60,7 @@ const Landing = () => {
                     <img src={tv} alt="netflix logo" className={styles["tv-img"]}/>
                 </div>
             </div>
-            <div className={styles["section-three"]} data-aos="fade-left">
+            <div className={styles["section-three"]} data-aos="fade-left" data-aos-duration="2000">
                 <div className={styles["enjoy-text"]}>
                     <div className={styles["header"]}>Download your shows to watch offline.</div>
                     <p className={styles["header-primary"]}>Save your favorites easily and always have something to watch.</p>
@@ -69,13 +69,13 @@ const Landing = () => {
                     <img src={mobile} alt="netflix logo" className={styles["tv-img"]}/>
                 </div>
             </div>
-            <div className={styles["section-four"]} data-aos="fade-right">
+            <div className={styles["section-four"]} data-aos="fade-right" data-aos-duration="2000">
                 <div className={styles["enjoy-text"]}>
                     <div className={styles["header"]}>Watch everywhere.</div>
                     <p className={styles["header-primary"]}>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
                 </div>
             </div>
-            <div className={styles["section-five"]} data-aos="fade-right">
+            <div className={styles["section-five"]} data-aos="fade-right" data-aos-duration="2000">
                 <div className={styles["enjoy-text"]}>
                     <div className={styles["header"]}>Create profiles for kids.</div>
                     <p className={styles["header-primary"]}> Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
@@ -84,7 +84,7 @@ const Landing = () => {
                     <img src={KidsValue} alt="netflix logo" className={styles["tv-img"]}/>
                 </div>
             </div>
-            <div className={styles["section-six"]} data-aos="fade-right">
+            <div className={styles["section-six"]} data-aos="fade-right" data-aos-duration="2000">
                 <div className={styles["enjoy-text"]}>
                     <div className={styles["header"]}>Frequently Asked Questions</div>
                 </div>
