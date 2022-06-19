@@ -231,6 +231,8 @@
 }
 
 @include media-md{
+  .container {
+    width:100%;
   .section-one{
     @include default;
 
@@ -388,4 +390,5 @@
       }
     }
   }  
+}
 }
