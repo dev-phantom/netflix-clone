@@ -4,6 +4,7 @@
 
 .container {
   width:100%;
+  overflow: hidden !important;
   .section-one{
     background:url("../assets/images/background.jpg") no-repeat fixed top center;
     background-size: cover;
@@ -241,8 +242,8 @@
         .logo-container{
           padding: 15px 0 0 15px;
           .logo{
-            width:80% !important;
-            height:2rem !important;
+            width:50% !important;
+            height:1.5rem !important;
           }
         }
       }
