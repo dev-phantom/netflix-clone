@@ -246,6 +246,22 @@
             height:24px !important;
           }
         }
+        .button-container{
+          padding: 18px 20px 0 0;
+
+          .Signin-btn{
+            background-color:$primary-color;
+            line-height: normal;
+            padding: .25rem .5rem !important;
+            font-weight: bold;
+            font-size: 1rem;
+            float: right;
+            text-transform: capitalize;
+            text-align:center;
+            color:$color;
+            border-radius: 5px;
+          }
+        }
       }
       .inner-container{
         .header{
