@@ -232,10 +232,11 @@
 
 @include media-md{
   .container {
-    width:100%;
+    width:100% !important;
+    overflow: hidden !important;
   .section-one{
     @include default;
-
+    overflow-x: hidden !important;
       .nav{
         .logo-container{
           padding: 15px 0 0 15px;
