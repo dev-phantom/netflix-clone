@@ -252,12 +252,13 @@
           .Signin-btn{
             background-color:$primary-color;
             line-height: normal;
-            padding: .5rem 3rem !important;
+            width:4.5rem;
+            padding: .5rem 0 !important;
             font-weight: bold;
             font-size: 1rem;
             float: right;
             text-transform: capitalize;
-            text-align:center;
+            text-align:center !important;
             color:$color;
             border-radius: 5px;
           }
