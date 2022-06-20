@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../styles/home.module.scss";
 import { NetflixLogo, tv, mobile,KidsValue } from "../assets/index"
+import Faq from "../components/Faq";
 
 const Landing = () => {
     const[title,setTitle] = useState('');
@@ -88,6 +89,7 @@ const Landing = () => {
                 <div className={styles["enjoy-text"]}>
                     <div className={styles["header"]}>Frequently Asked Questions</div>
                 </div>
+                <Faq />
             </div>
         </div>
      );
