@@ -6,6 +6,8 @@
 .container {
   width:100%;
   overflow: hidden !important;
+  background-color: $bg-color;
+
   .section-one{
     background:url("../assets/images/background.jpg") no-repeat fixed top center;
     background-size: cover;

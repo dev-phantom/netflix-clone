@@ -1,0 +1,122 @@
+@import "./base/typography";
+@import "./abstracts/functions";
+@import "./abstracts/variables";
+@import "./base/responsive";
+
+.Login-container {
+  width:100%;
+  overflow: hidden !important;
+  background:url("../assets/images/login-bg.jpg") no-repeat fixed top center;
+  background-size: cover;
+  padding-top:2rem;
+  
+  header{
+      padding: 0 0 0 2rem;
+      width: 100%;
+      img{
+          width: 15%;
+      }
+    }
+    .Main-container{
+        width:100%;
+        color:$color;
+        @include center-div;
+        form{
+            width: 35%;
+            background: rgba(0, 0, 0, 0.582);
+            @include column;
+            padding: 3rem 4rem 2rem 4rem;
+
+            .Title{
+                font-size: 32px;
+                font-weight: bold;
+            }
+            .email{
+                margin-top: 1rem;
+                height:3rem;
+                background: $secondary-color;
+                color:$color;
+                border:none;
+                outline: none;
+                padding-left: 1rem;
+                border-radius: 5px;
+
+                &::placeholder{
+                    font-size: 1rem;
+                }
+                
+            }
+
+            .button-summit{
+                margin-top: 2rem;
+                background: $primary-color;
+                height:3rem;
+                border-radius: 5px;
+                color:$color;
+                font-weight:bold;
+                font-size:20px;
+            }
+            .RememberNeed-flex{
+                margin-top: 1rem;
+                @include flexing;
+                justify-content: space-between;
+                align-items: center;
+                color:$link-color;
+                .rememberme-flex{
+
+                    span{
+                        padding-left: 5px;
+                    }
+                }
+                .link{
+                    color:$link-color;
+                }
+            }
+            .form-footer{
+                padding-top:5rem;
+                color:$link-color;
+
+                div{
+                    font-size:16px;
+                    span{
+                        .link{
+                            color:$color;
+                        }
+                    }
+                }
+                p{
+                    font-size: 13px;
+                    color: #8c8c8c;
+                }
+            }
+        }
+    }
+    Footer{
+        margin-top: 3rem;
+        padding:2rem 10rem;
+        color:$link-color;
+        @include column;
+        background: rgba(0, 0, 0, 0.582);
+        .head{
+            padding: 2rem 0;
+            .link{
+                color:$link-color;
+              }
+        }
+        .grid-container{
+            // margin: 2rem auto 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+      
+            .grid-flex{
+              @include column;
+      
+              .link{
+                color:$link-color;
+              }
+            }
+          }
+    }
+
+}

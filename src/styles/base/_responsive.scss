@@ -253,4 +253,109 @@ $test:red;
   
     }
   }
+  .Login-container {
+    width:100%;
+    overflow: hidden !important;
+    background:$bg-color !important;
+    background-size: cover;
+    padding-top:2rem ;
+
+
+    .Main-container{
+      width:100%;
+      color:$color;
+      @include center-div;
+      padding-bottom: 2.5rem;
+      border-bottom:1px solid $color;
+      form{
+          width: 90% !important;
+          background: rgba(0, 0, 0, 0.582);
+          @include column;
+          padding:1rem 0 !important;
+
+          .Title{
+              font-size: 32px;
+              font-weight: bold;
+          }
+          .email{
+              margin-top: 1rem;
+              height:3rem;
+              background: $secondary-color;
+              color:$color;
+              border:none;
+              outline: none;
+              padding-left: 1rem;
+              border-radius: 5px;
+
+              &::placeholder{
+                  font-size: 1rem;
+              }
+              
+          }
+
+          .button-summit{
+              margin-top: 2rem;
+              background: $primary-color;
+              height:3rem;
+              border-radius: 5px;
+              color:$color;
+              font-weight:bold;
+              font-size:20px;
+          }
+          .RememberNeed-flex{
+              margin-top: 1rem;
+              @include flexing;
+              justify-content: space-between;
+              align-items: center;
+              color:$link-color;
+              .rememberme-flex{
+
+                  span{
+                      padding-left: 5px;
+                  }
+              }
+              .link{
+                  color:$link-color;
+              }
+          }
+          .form-footer{
+              padding-top:5rem;
+              color:$link-color;
+
+              div{
+                  font-size:16px;
+                  span{
+                      .link{
+                          color:$color;
+                      }
+                  }
+              }
+              p{
+                  font-size: 13px;
+                  color: #8c8c8c;
+              }
+          }
+      }
   }
+  footer{
+    padding:1rem 1rem !important;
+    color:$link-color;
+    @include column;
+    .grid-container{
+      // margin: 2rem auto 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-gap: 1rem !important;
+
+      .grid-flex{
+        @include column;
+
+        .link{
+          color:$link-color;
+        }
+      }
+    }
+    
+  }
+  }
+}

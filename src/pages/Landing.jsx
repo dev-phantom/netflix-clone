@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../styles/home.module.scss";
@@ -10,10 +10,14 @@ const Landing = () => {
     const[title,setTitle] = useState('');
     const [isPending, setIsPending] = useState(false);
     const form = useRef();
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsPending(true);
+    }
+    const HandleLogin = () => {
+        navigate('/Login');
     }
 
     useEffect(() => {
@@ -28,7 +32,7 @@ const Landing = () => {
                         <img src={NetflixLogo} alt="netflix logo" className={styles["logo"]}/>
                     </div>
                     <div className={styles["button-container"]}>
-                        <button className={styles["Signin-btn"]}>sign in</button>
+                        <button className={styles["Signin-btn"]} onClick={HandleLogin}>sign in</button>
                     </div>
                 </div>
                 <div className={styles["inner-container"]}>
@@ -46,9 +50,8 @@ const Landing = () => {
                                 className={styles["email"]}
                                 onChange= {(e) => setTitle(e.target.value)}
                             />
-                                <button type="submit" className={styles["button-summit"]} >Get started</button>
+                            <button type="submit" className={styles["button-summit"]} >Get started</button>
                                 { isPending && <div>loading...</div>}
-                    
                         </form>
                     </div>
                 </div>

@@ -19,11 +19,11 @@ body {
   min-height: 100vh;
   text-rendering: optimizespeed;
   line-height: 1.5;
-  background-color: $bg-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: $font;
   scroll-behavior: smooth;
+
 }
 
 main {
@@ -39,7 +39,12 @@ hr {
 a {
   background-color: transparent;
   text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
 }
+
 
 abbr[title] {
   border-bottom: none;
