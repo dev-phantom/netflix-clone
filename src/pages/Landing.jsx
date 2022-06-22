@@ -113,27 +113,27 @@ const Landing = () => {
                 <div className={styles["header"]}>Questions? Contact us.</div>
                 <div className={styles["grid-container"]}>
                     <div className={styles["grid-flex"]}>
-                        <Link to="#!" className={styles["link"]}>FAQ</Link>
-                        <Link to="#!" className={styles["link"]}>Investor relations</Link>
-                        <Link to="#!" className={styles["link"]}>Privacy</Link>
-                        <Link to="#!" className={styles["link"]}>Speed Test</Link>
+                        <Link to="https://help.netflix.com/en/node/412" className={styles["link"]}>FAQ</Link>
+                        <Link to="https://ir.netflix.net/ir-overview/profile/default.aspx" className={styles["link"]}>Investor relations</Link>
+                        <Link to="https://help.netflix.com/legal/privacy" className={styles["link"]}>Privacy</Link>
+                        <Link to="https://fast.com/" className={styles["link"]}>Speed Test</Link>
                     </div>
                     <div className={styles["grid-flex"]}>
-                        <Link to="#!" className={styles["link"]}>Help center</Link>
-                        <Link to="#!" className={styles["link"]}>Jobs</Link>
+                        <Link to="https://help.netflix.com/en/" className={styles["link"]}>Help center</Link>
+                        <Link to="https://jobs.netflix.com/" className={styles["link"]}>Jobs</Link>
                         <Link to="#!" className={styles["link"]}>Cookies Prefrences</Link>
-                        <Link to="#!" className={styles["link"]}>Legal Notices</Link>
+                        <Link to="https://help.netflix.com/legal/notices" className={styles["link"]}>Legal Notices</Link>
                     </div>
                     <div className={styles["grid-flex"]}>
                         <Link to="#!" className={styles["link"]}>Account</Link>
-                        <Link to="#!" className={styles["link"]}>Ways to watch</Link>
-                        <Link to="#!" className={styles["link"]}>Cooperate Information</Link>
-                        <Link to="#!" className={styles["link"]}>Only on Netflix</Link>
+                        <Link to="https://devices.netflix.com/en/" className={styles["link"]}>Ways to watch</Link>
+                        <Link to="https://help.netflix.com/legal/corpinfo" className={styles["link"]}>Cooperate Information</Link>
+                        <Link to="https://www.netflix.com/ng/browse/genre/839338" className={styles["link"]}>Only on Netflix</Link>
                     </div>
                     <div className={styles["grid-flex"]}>
-                        <Link to="#!" className={styles["link"]}>Media Center</Link>
-                        <Link to="#!" className={styles["link"]}>Terms of use</Link>
-                        <Link to="#!" className={styles["link"]}>Contact Us </Link>
+                        <Link to="https://media.netflix.com/en/" className={styles["link"]}>Media Center</Link>
+                        <Link to="https://help.netflix.com/legal/termsofuse" className={styles["link"]}>Terms of use</Link>
+                        <Link to="https://help.netflix.com/en/contactus" className={styles["link"]}>Contact Us </Link>
                     </div>
                 </div>
                 <div className={styles["country"]}>Netflix Nigeria</div>
