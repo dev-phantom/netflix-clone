@@ -1,31 +1,28 @@
 import React, { useState } from "react";
-import styles from "../styles/home.module.scss";
 import { FaqList } from "./FaqList";
+import FaqItem from "./FaqItem";
 
 const Faq = () => {
-
   const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => setIsOpen(!isOpen);
+
+  const handleClick = (id) => {
+    setIsOpen({
+      ...isOpen,
+      [id]: !isOpen[id]
+    });
+  };
 
     return ( 
-        <div className={styles["faq-container"]}>
-
-        {FaqList.map((faq) => (
-        <div key={faq.id} className={styles["inner-container"]}>
-          <div className={styles["question-flex"]}>
-            <div className={styles["question"]}>
-              {faq.question}
-            </div>
-            <button onClick={handleClick} className={styles["question-btn"]}>{faq.icons}</button> 
-            </div>
-          <div>
-            {isOpen && 
-                <p>{faq.answer}</p>
-            }
-          </div>
-        </div>
+        <>
+        {FaqList.map((list) => (
+          <FaqItem
+            key={list.id}
+            list={list}
+            isOpen={isOpen}
+            handleClick={handleClick}
+          />
         ))}
-        </div>
+      </>
      );
 }
  

@@ -76,7 +76,7 @@ const Landing = () => {
                     <p className={styles["header-primary"]}>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
                 </div>
             </div>
-            <div className={styles["section-five"]} data-aos="fade-right" data-aos-duration="2000">
+            <div className={styles["section-five"]} data-aos="fade-left" data-aos-duration="2000">
                 <div className={styles["enjoy-text"]}>
                     <div className={styles["header"]}>Create profiles for kids.</div>
                     <p className={styles["header-primary"]}> Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
@@ -90,7 +90,27 @@ const Landing = () => {
                     <div className={styles["header"]}>Frequently Asked Questions</div>
                 </div>
                 <Faq />
+                <div className={styles["header-primary"]}>Ready to watch? Enter your email to create or restart your membership.</div>
+                    <div>
+                        <form ref={form} onSubmit={handleSubmit} className={styles["form-container"]}>
+                            <input
+                                type="email"
+                                name='user_email'
+                                required 
+                                value={title}
+                                placeholder="Enter your email address"
+                                className={styles["email"]}
+                                onChange= {(e) => setTitle(e.target.value)}
+                            />
+                                <button type="submit" className={styles["button-summit"]} >Get started</button>
+                                { isPending && <div>loading...</div>}
+                    
+                        </form>
+                    </div>
             </div>
+            <footer className={styles["section-seven"]} data-aos="fade-right" data-aos-duration="2000">
+                <div>Questions? Contact us.</div>
+            </footer>
         </div>
      );
 }

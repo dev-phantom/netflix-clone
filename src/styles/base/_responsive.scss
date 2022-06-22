@@ -172,6 +172,7 @@ $test:red;
     .section-six{
       @include default;
       padding: 50px 5% !important;
+      margin-bottom: 10rem;
       .enjoy-text{
         width: 100% !important;
         padding:0 !important;
@@ -181,6 +182,62 @@ $test:red;
           line-height: 1.1 !important;
         }
       }
+
+      .faq{
+        padding-top: 1rem;
+        .inner-container{
+          overflow:hidden;
+          width:100%;
+          color:$color;
+          @include center-div;
+          .question-flex{
+            @include flexing;
+            justify-content: space-between;
+            align-items: center;
+            background: $secondary-color;
+            padding:1rem;
+            width:90% !important;
+            .question{
+              font-size:1rem !important;
+            }
+            button{
+              color: $color;
+              font-size: 2rem !important;
+            }
+          }
+          .answer{
+            margin-top: 5px;
+            font-size:1.7rem;
+            background: $secondary-color;
+            padding:2rem;
+            width:90% !important;
+          }
+        }
+      }
+      .header-primary{
+        font-size:1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding:1.5rem 0 1.5rem 0 !important;
+      }
+      div{
+        .form-container{
+          flex-direction:column !important;
+
+          .email{
+            width:80% !important;
+            height:3rem !important;
+
+          }
+          .button-summit{
+            width: 40% !important;
+            height: 3rem !important;
+            font-size:20px !important;
+            margin-top:1rem !important;
+          }
+        }
+      }
     }  
+
   }
   }

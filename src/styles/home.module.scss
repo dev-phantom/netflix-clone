@@ -213,9 +213,8 @@
   .section-six{
     @include default;
     padding-top:4rem;
-    padding-bottom:20rem;
-    padding-left:8rem;
-    margin-bottom: 10rem;
+
+    padding-bottom: 5rem;
 
     .enjoy-text{
       width: 100%;
@@ -227,20 +226,78 @@
         font-weight:bold;
         line-height: 55px;
         text-align:center;
+        padding-bottom: 2rem;
       }
     }
-    .faq-container{
-      margin-top: 2rem;
+    .faq{
+      padding-top: 1rem;
       .inner-container{
         overflow:hidden;
         width:100%;
+        color:$color;
+        @include center-div;
         .question-flex{
           @include flexing;
-          background: #222;
-          width:90%;
-          height:2.5rem;
+          justify-content: space-between;
+          align-items: center;
+          background: $secondary-color;
+          padding:1rem;
+          width:60%;
+          .question{
+            font-size:1.8rem;
+          }
+          button{
+            color: $color;
+            font-size: 3rem;
+          }
+        }
+        .answer{
+          margin-top: 5px;
+          font-size:1.7rem;
+          background: $secondary-color;
+          padding:2rem;
+          width:60%;
+        }
+      }
+    }
+    .header-primary{
+      font-size:1rem;
+      font-family:Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding:5rem 0 1.5rem 0;
+    }
+    div{
+      width:100%;
+      .form-container{
+        @include flexing;
+        justify-content: center;
+        align-items:center;
+        padding-bottom: 3rem;
+
+        .email{
+          width:30%;
+          height:4rem;
+          background:$color;
+          border:none;
+          
+        }
+        .button-summit{
+          width: 15%;
+          height: 4rem;
+          background: $primary-color;
+          color:$color;
+          font-size:30px;
+          text-align:center;
+          font-weight: bold;
+          
         }
       }
     }
   }
+  .section-seven{
+    @include default;
+    padding-top:2rem;
+    color:$color;
+  }
+
 }
