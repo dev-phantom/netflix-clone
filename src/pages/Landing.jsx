@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../styles/home.module.scss";
@@ -109,7 +110,33 @@ const Landing = () => {
                     </div>
             </div>
             <footer className={styles["section-seven"]} data-aos="fade-right" data-aos-duration="2000">
-                <div>Questions? Contact us.</div>
+                <div className={styles["header"]}>Questions? Contact us.</div>
+                <div className={styles["grid-container"]}>
+                    <div className={styles["grid-flex"]}>
+                        <Link to="#!" className={styles["link"]}>FAQ</Link>
+                        <Link to="#!" className={styles["link"]}>Investor relations</Link>
+                        <Link to="#!" className={styles["link"]}>Privacy</Link>
+                        <Link to="#!" className={styles["link"]}>Speed Test</Link>
+                    </div>
+                    <div className={styles["grid-flex"]}>
+                        <Link to="#!" className={styles["link"]}>Help center</Link>
+                        <Link to="#!" className={styles["link"]}>Jobs</Link>
+                        <Link to="#!" className={styles["link"]}>Cookies Prefrences</Link>
+                        <Link to="#!" className={styles["link"]}>Legal Notices</Link>
+                    </div>
+                    <div className={styles["grid-flex"]}>
+                        <Link to="#!" className={styles["link"]}>Account</Link>
+                        <Link to="#!" className={styles["link"]}>Ways to watch</Link>
+                        <Link to="#!" className={styles["link"]}>Cooperate Information</Link>
+                        <Link to="#!" className={styles["link"]}>Only on Netflix</Link>
+                    </div>
+                    <div className={styles["grid-flex"]}>
+                        <Link to="#!" className={styles["link"]}>Media Center</Link>
+                        <Link to="#!" className={styles["link"]}>Terms of use</Link>
+                        <Link to="#!" className={styles["link"]}>Contact Us </Link>
+                    </div>
+                </div>
+                <div className={styles["country"]}>Netflix Nigeria</div>
             </footer>
         </div>
      );

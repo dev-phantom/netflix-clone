@@ -172,7 +172,7 @@ $test:red;
     .section-six{
       @include default;
       padding: 50px 5% !important;
-      margin-bottom: 10rem;
+      margin-bottom: 0rem !important;
       .enjoy-text{
         width: 100% !important;
         padding:0 !important;
@@ -184,40 +184,25 @@ $test:red;
       }
 
       .faq{
-        padding-top: 1rem;
         .inner-container{
-          overflow:hidden;
-          width:100%;
-          color:$color;
-          @include center-div;
+
           .question-flex{
-            @include flexing;
-            justify-content: space-between;
-            align-items: center;
-            background: $secondary-color;
-            padding:1rem;
+
             width:90% !important;
             .question{
               font-size:1rem !important;
             }
             button{
-              color: $color;
               font-size: 2rem !important;
             }
           }
           .answer{
-            margin-top: 5px;
             font-size:1rem !important;
-            background: $secondary-color;
-            padding:2rem;
             width:90% !important;
           }
         }
       }
       .header-primary{
-        font-size:1rem;
-        font-family:Arial, Helvetica, sans-serif;
-        text-align: center;
         padding:1.5rem 0 1.5rem 0 !important;
       }
       div{
@@ -239,5 +224,33 @@ $test:red;
       }
     }  
 
+    .section-seven{
+
+      padding:1rem 1rem !important;
+      color:$link-color;
+      @include column;
+  
+      .header{
+        padding-bottom: 1rem !important;
+      }
+      .grid-container{
+        // margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 1rem !important;
+  
+        .grid-flex{
+          @include column;
+  
+          .link{
+            color:$link-color;
+          }
+        }
+      }
+      .country{
+        padding: 1rem 0;
+      }
+  
+    }
   }
   }

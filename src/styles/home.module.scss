@@ -295,9 +295,32 @@
     }
   }
   .section-seven{
-    @include default;
-    padding-top:2rem;
-    color:$color;
+
+    padding:1rem 10rem;
+    color:$link-color;
+    @include column;
+
+    .header{
+      padding-bottom: 1rem;
+    }
+    .grid-container{
+      // margin: 2rem auto 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+
+      .grid-flex{
+        @include column;
+
+        .link{
+          color:$link-color;
+        }
+      }
+    }
+    .country{
+      padding: 1rem 0;
+    }
+
   }
 
 }
